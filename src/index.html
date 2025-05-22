@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vedita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="header__up">
+        <div class="header__up-wrapper container">
+            <img src="./img/logo.svg" alt="Логотип" class="header__logo" />
+          <div class="header__up-elem">
+            <img class="header__up-icon" src="./icons/geo.svg" alt="Город">
+            <span class="header__text">Тамбов</span>
+          </div>
+          <div class="header__up-elem">
+            <img class="header__up-icon" src="./icons/phone.svg" alt="Телефон">
+            <a class="header__text" href="tel:+79156600909">+7 (915) 660 09-09</a>
+          </div>
+          <div class="header__up-elem">
+            <img class="header__up-icon" src="./icons/time.svg" alt="Часы работы">
+            <span class="header__text">09:00-21:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__bottom">
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Меню ресторана</a>
+            </li>
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Бизнес-ланч</a>
+            </li>
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Детокс</a>
+            </li>
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Рационы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__hamburger">
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+        </div>
+        <nav class="header__navbar-mobile">
+          <span class="header__navbar-close" id="closePopup">&times;</span>
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Меню ресторана</a>
+            </li>
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Бизнес-ланч</a>
+            </li>
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Детокс</a>
+            </li>
+            <li class="header__navbar-item">
+              <a class="header__navbar-link" href="#">Рационы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__basket">
+          <img class="header__basket-icon" src="./icons/basket.svg" alt="Корзина">
+          <span class="header__basket-count">1</span>
+          <a href="#" class="header__basket-link">Корзина</a>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="main__content">
+        <img src="./icons/arrow-left.svg" alt="стрелка" class="main__arrow left">
+
+        <div class="main__slider">
+          <img src="./img/main.png" alt="ДЕТОКС" class="main__slide">
+          <img src="./img/fruits.png" alt="ДЕТОКС" class="main__slide">
+          <img src="./img/halth.png" alt="ДЕТОКС" class="main__slide">
+        </div>
+
+        <div class="container">
+          <div class="main__wrapper">
+            <h1 class="main__title"><span>ДЕТОКС-</span>ПРОГРАММА</h1>
+            <p class="main__subtitle">
+              комплексного очищения организма от <span>1099</span> руб
+            </p>
+            <a class="main__btn btn" href="#delivery">Заказать</a>
+          </div>
+          <div class="main__dots">
+            <span class="main__dot active" data-id="1"></span>
+            <span class="main__dot" data-id="2"></span>
+            <span class="main__dot" data-id="3"></span>
+          </div>
+        </div>
+
+        <img src="./icons/arrow-right.svg" alt="стрелка" class="main__arrow right">
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="advantages">
+        <div class="advantages__elem">
+          <img src="./icons/benefit1.svg" alt="выгода" class="advantages__img">
+          <p class="advantages__text">Используем только натуральные продукты, блюда без консервантов и искусственных добавок.</p>
+        </div>
+        <div class="advantages__elem">
+          <img src="./icons/benefit2.svg" alt="выгода" class="advantages__img">
+          <p class="advantages__text">Сбалансированное здоровое меню, соответствующее КБЖУ</p>
+        </div>
+        <div class="advantages__elem">
+          <img src="./icons/benefit3.svg" alt="выгода" class="advantages__img">
+          <p class="advantages__text">По желанию подберем программу тренировок и составим индивидуальное КБЖУ для любого уровня подготовки. </p>
+        </div>
+        <div class="advantages__elem">
+          <img src="./icons/benefit4.svg" alt="выгода" class="advantages__img">
+          <p class="advantages__text">Бесплатная доставка, чтобы сэкономить массу времени и сил для более важных и приятных дел.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="rations">
+        <h2 class="rations__title">РАЦИОНЫ</h2>
+        <div class="rations__wrapper">
+          <div class="rations__elem">
+            <img src="./img/balance.png" alt="Баланс" class="rations__img">
+            <div class="rations__desc">
+              <h3 class="rations__desc-title">Баланс</h3>
+              <p class="rations__desc-text">
+                Здоровое питание на каждый день
+                для тех, кто  заботится о своем ежедневном рационе.
+              </p>
+              <span class="rations__desc-kkal">~1 800 ккал</span>
+              <div class="rations__desc-footer">
+                <span class="rations__desc-cost">1190 ₽</span>
+                <button class="btn rations__desc-btn">Выбрать</button>
+              </div>
+            </div>
+          </div>
+          <div class="rations__elem">
+            <img src="./img/light.png" alt="Лайт" class="rations__img">
+            <div class="rations__desc">
+              <h3 class="rations__desc-title">ЛАЙТ</h3>
+              <p class="rations__desc-text">
+                Четырехразовое меню для похудения, поддержания формы и создания рельефа.
+              </p>
+              <span class="rations__desc-kkal">~1 400 ккал</span>
+              <div class="rations__desc-footer">
+                <span class="rations__desc-cost">1050 ₽</span>
+                <button class="btn rations__desc-btn">Выбрать</button>
+              </div>
+            </div>
+          </div>
+          <div class="rations__elem">
+            <img src="./img/superlight.png" alt="Супер лайт" class="rations__img">
+            <div class="rations__desc">
+              <h3 class="rations__desc-title">Супер лайт</h3>
+              <p class="rations__desc-text">
+                Быстрое похудение и поддержание формы. Трехразовое меню для быстрого снижения веса без спорта.
+              </p>
+              <span class="rations__desc-kkal">~900 ккал</span>
+              <div class="rations__desc-footer">
+                <span class="rations__desc-cost">890 ₽</span>
+                <button class="btn rations__desc-btn">Выбрать</button>
+              </div>
+            </div>
+          </div>
+          <div class="rations__elem">
+            <img src="./img/mass.png" alt="Масс" class="rations__img">
+            <div class="rations__desc">
+              <h3 class="rations__desc-title">масс</h3>
+              <p class="rations__desc-text">
+                Сбалансированное питание для поддержания оптимальной формы при тренировках.
+              </p>
+              <span class="rations__desc-kkal">~1 800 ккал</span>
+              <div class="rations__desc-footer">
+                <span class="rations__desc-cost">1490 ₽</span>
+                <button class="btn rations__desc-btn">Выбрать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="about">
+        <img src="./img/about.png" alt="Повар" class="about__img">
+      <div class="about__desc">
+        <h2 class="about__title">О нас</h2>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et leo nulla nisl. Neque parturient elementum habitasse etiam nec. Fermentum justo nam nibh vitae pellentesque integer. Imperdiet habitant tortor est amet tortor viverra. Nulla eget commodo, adipiscing arcu in et risus in.
+        </p>
+        <p class="about__text">
+          Cras eu molestie consectetur amet at euismod. Nunc elementum lorem pharetra cursus risus eu. Ac feugiat arcu etiam eget sem urna tincidunt lacus. Nec morbi ultrices nulla accumsan adipiscing. Elementum sagittis eu placerat non molestie luctus gravida. Risus laoreet nunc lectus orci. Vitae at augue sagittis. Sed faucibus ultrices elementum faucibus varius leo, vitae. Molestie semper habitant varius eleifend nisi faucibus. 
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="delivery">
+        <div id="delivery" class="delivery__desc">
+        <h2 class="delivery__title">Условия доставки</h2>
+        <p class="delivery__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et leo nulla nisl. Neque parturient elementum habitasse etiam nec.
+        </p>
+        <p class="delivery__text">
+          Fermentum justo nam nibh vitae pellentesque integer. Imperdiet habitant tortor est amet tortor viverra. 
+        </p>
+        <button class="btn delivery__btn" type="button">Связаться с нами</button>
+      </div>
+      <iframe class="delivery__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49d60fa17c1a10265116b43fee40d25539704d9bb1cbcf4cacd182090e9ddcbc&amp;source=constructor" width="586px" height="466px" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__up container">
+        <img src="./img/footerlogo.svg" alt="Логотип" class="footer__logo">
+        <div class="footer__links">
+          <a href="#" class="footer__link">Контакты</a>
+          <a href="#" class="footer__link">Оплата</a>
+          <a href="#" class="footer__link">Публичная оферта</a>
+          <a href="#" class="footer__link">О компании</a>
+          <a href="#" class="footer__link">Доставка</a>
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <div class="footer__bottom-wrapper">
+          <span class="footer__copyright">© 2025</span>
+          <a href="#">
+            <img class="footer__icon" src="./icons/instagram.svg" alt="instagram">
+          </a>
+        </div>
+        <p class="footer__cookie">Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы принимаете условия обработки персональных данных</p>
+      </div>
+    </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup__content">
+        <span class="popup__close" id="closePopup">&times;</span>
+        <div class="popup__wrapper-form">
+          <h2 class="popup__title">Форма обратной связи</h2>
+          <form action="POST" class="popup__form">
+            <label class="popup__label">Ваше имя <span>*</span></label>
+            <input class="popup__input" type="text" name="name" required>
+            
+            <label class="popup__label">Телефон <span>*</span></label>
+            <input class="popup__input" type="tel" name="phone" required>
+            <button class="popup__btn btn" type="submit">Отправить</button>
+            <p class="popup__privacy">Нажимая на кнопку, вы соглашаетесь на обработку <a class="popup__privacy-link" href="#">персональных данных</a></p>
+          </form>
+        </div>
+        <div class="popup__wrapper-done">
+          <h2 class="popup__title">Форма обратной связи</h2>
+          <p class="popup__text">Ваша заявка успешно отправлена.</p>
+          <button class="popup__btn  popup__btn-close btn">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

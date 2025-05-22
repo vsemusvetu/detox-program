@@ -1,0 +1,43 @@
+@use "base/variables" as *;
+@use "blocks/header" as *;
+@use "blocks/main" as *;
+@use "blocks/advantages" as *;
+@use "blocks/rations" as *;
+@use "blocks/about" as *;
+@use "blocks/delivery" as *;
+@use "blocks/footer" as *;
+@use "blocks/popup" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+a{
+    text-decoration: none;
+    color: $second-color;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    color: $second-color;
+    scroll-behavior: smooth;
+}
+
+body{
+    border-color: #fff;
+    
+}
+.container {
+  max-width: 1181px;
+  margin: 0 auto;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: $main-color;
+    color: #fff;
+    cursor: pointer;
+}
+
